@@ -1,0 +1,253 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #181920;
+    color: #f5f5f5;
+    min-height: 100vh;
+}
+
+header {
+    background: #27366a;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.navbar {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem 2rem;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+.logo-img {
+    width: 55px;
+    height: auto;
+}
+.logo-txt {
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    color: #fff;
+}
+.menu {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+}
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.08rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color 0.2s;
+}
+.menu a:hover,
+.menu a:focus {
+    color: #43ffce;
+    outline: none;
+}
+
+main {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastro-box {
+    background: #1b1e29;
+    border-radius: 1rem;
+    box-shadow: 0 2px 12px rgba(67,255,206,0.07);
+    padding: 2.2rem 2.3rem 1.8rem 2.3rem;
+    max-width: 390px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.cadastro-box h2 {
+    font-size: 1.23rem;
+    color: #43ffce;
+    text-align: left;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.27rem;
+    margin-bottom: 1.15rem;
+}
+
+label {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 0.62rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    background: #232537;
+    color: #fff;
+    outline: none;
+    transition: background 0.2s, border 0.2s;
+    margin-top: 0.15rem;
+}
+
+input:focus {
+    background: #222435;
+    border: 2px solid #43ffce;
+}
+
+.descricao-senha {
+    font-size: 0.85rem;
+    color: #bfc9e3;
+    margin-top: 0.2rem;
+}
+
+.termos {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.7rem;
+    margin-bottom: 1rem;
+}
+
+.termos input[type="checkbox"] {
+    accent-color: #43ffce;
+    margin-top: 0.2rem;
+}
+
+.termos label {
+    font-size: 0.96rem;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.termos a {
+    color: #43ffce;
+    text-decoration: underline;
+    font-weight: 500;
+}
+.termos a:hover,
+.termos a:focus {
+    color: #fff;
+}
+
+.form-actions.horizontal {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: flex-start;
+    margin-top: 1.3rem;
+}
+
+.btn-criar {
+    background: #43ffce;
+    color: #192c4c;
+    font-weight: bold;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.7rem 1.4rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    min-width: 140px;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn-criar:hover,
+.btn-criar:focus {
+    background: #26bfaa;
+    outline: none;
+}
+
+.login-link {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 0.3rem;
+    white-space: nowrap;
+}
+
+.login-link a {
+    color: #2e90ff;
+    text-decoration: underline;
+    font-weight: 500;
+}
+.login-link a:hover,
+.login-link a:focus {
+    color: #43ffce;
+}
+
+footer {
+    background: #27366a;
+    color: #fff;
+    text-align: center;
+    padding: 1.2rem 0 0.6rem 0;
+    margin-top: 2.5rem;
+}
+
+footer nav {
+    margin-bottom: 0.3rem;
+}
+
+footer a {
+    color: #43ffce;
+    margin: 0 0.7rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+footer a:hover,
+footer a:focus {
+    color: #fff;
+    outline: none;
+}
+footer small {
+    display: block;
+    margin-top: 0.6rem;
+    color: #f5f5f5;
+    font-size: 0.97rem;
+}
+
+/* Acessibilidade extra */
+a:focus,
+button:focus,
+input:focus {
+    outline: 2px solid #43ffce;
+    outline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+    .cadastro-box {
+        padding: 1.3rem 0.5rem 1rem 0.5rem;
+        max-width: 98vw;
+    }
+    .form-actions.horizontal {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.7rem;
+    }
+    .login-link {
+        margin-left: 0;
+        text-align: center;
+    }
+}

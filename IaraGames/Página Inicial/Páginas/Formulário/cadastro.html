@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Iara Games</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-area">
+                <img src="../../Imagens/logo.png" alt="Logo IARA GAMES" class="logo-img" />
+            </div>
+            <ul class="menu">
+                <li><a href="../../HTML/index.html">INÍCIO</a></li>
+                <li><a href="../../Páginas/Listagem de jogos/Loja/HTML/index.html">LOJA</a></li>
+                <li><a href="../../HTML/forum.html">FÓRUM</a></li>
+                <li><a href="../../HTML/suporte.html">SUPORTE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="cadastro-box">
+            <h2>Junte-se à comunidade Iara Games</h2>
+            <form id="cadastro-usuario" name="cadastro-usuario" action="#" method="POST" autocomplete="on">
+                <div class="form-item">
+                    <label for="nome">Nome/User:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome ou user" autocomplete="username">
+                </div>
+                <div class="form-item">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com" autocomplete="email">
+                </div>
+                <div class="form-item">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required placeholder="Mínimo 6 caracteres" minlength="6" autocomplete="new-password">
+                    <small class="descricao-senha">Sua senha deve ter pelo menos 6 caracteres</small>
+                </div>
+                <div class="form-item termos">
+                    <input type="checkbox" id="aceite" name="aceite" required>
+                    <label for="aceite">
+                        Eu aceito os <a href="#">Termos de Uso</a> e <a href="#">Política de Privacidade</a>.
+                    </label>
+                </div>
+                <div class="form-actions horizontal">
+                    <button type="submit" class="btn-criar">Criar Conta</button>
+                    <span class="login-link">Já tem uma conta? <a href="login.html">Faça login</a></span>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <a href="#">Sobre</a>
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Contato</a>
+        </nav>
+        <small>© 2025 Designed by Emanuel Eidt. Todos os direitos reservados.</small>
+    </footer>
+</body>
+</html>
